@@ -1,5 +1,5 @@
 "use client";
-import { Dispatch, Fragment, SetStateAction, useState } from "react";
+import { deleteSnippetById } from "@/lib/actions";
 import {
 	Dialog,
 	DialogPanel,
@@ -7,8 +7,8 @@ import {
 	Transition,
 	TransitionChild,
 } from "@headlessui/react";
-import { deleteSnippetById } from "@/lib/actions";
 import { useRouter } from "next/navigation";
+import { Dispatch, SetStateAction } from "react";
 import toast from "react-hot-toast";
 interface Props {
 	open: boolean;
