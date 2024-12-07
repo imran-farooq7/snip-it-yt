@@ -36,7 +36,6 @@ export default function RootLayout({
 					}}
 				>
 					<Navbar />
-					<TechBar />
 
 					{children}
 					<Toaster />

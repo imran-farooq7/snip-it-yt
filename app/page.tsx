@@ -8,6 +8,7 @@ export default async function Home() {
 	const { data: snippets } = await getAllSnippets();
 	return (
 		<>
+			<TechBar />
 			<SearchBar snippets={snippets} />
 		</>
 	);
