@@ -4,9 +4,9 @@ import { getSnippetsByTech } from "@/lib/actions";
 import { Technology } from "@prisma/client";
 
 interface Props {
-	params: {
+	params: Promise<{
 		tech: Technology;
-	};
+	}>;
 }
 const TechnogyPage = async ({ params }: Props) => {
 	const { tech } = await params;
