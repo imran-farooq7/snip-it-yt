@@ -3,9 +3,9 @@ import { getSnippetById } from "@/lib/actions";
 import { Snippit } from "@prisma/client";
 
 interface Props {
-	params: {
+	params: Promise<{
 		id: string;
-	};
+	}>;
 }
 const SnippetDetailPage = async ({ params }: Props) => {
 	const { id } = await params;
